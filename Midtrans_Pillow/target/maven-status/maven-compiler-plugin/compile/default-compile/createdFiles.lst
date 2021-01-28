@@ -1,0 +1,4 @@
+com\qa\midtrans_pillow\pageobjects\PaymentPage.class
+com\qa\midtrans_pillow\util\TestUtil.class
+com\qa\midtrans_pillow\base\TestBase.class
+com\qa\midtrans_pillow\util\Interaction.class

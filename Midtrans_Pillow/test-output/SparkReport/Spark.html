@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 9, 2021 01:22:47 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 9, 2021 01:22:47 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 9, 2021 01:26:36 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='50%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='92%'><b>35</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Payment Transaction using Credit Card":226.845
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Negative</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Positive</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Soumavo</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>AutomationPractice</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 35,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 2,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Negative</a><a class="dropdown-item" href="#">@Positive</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Payment Transaction using Credit Card</p>
+            <p class="text-sm">
+              <span>01:22:49 AM</span> / <span>00:03:46:845</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Payment Transaction using Credit Card</h5>
+<span class='badge badge-success'>01.09.2021 01:22:49</span>
+<span class='badge badge-danger'>01.09.2021 01:26:36</span>
+<span class='badge badge-default'>00:03:46:845</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Successful Payment Transaction Using Credit Card</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_has_launched_browser_and_navigated_to_url()">
+                <span>Given user has launched browser and navigated to url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_buy_now_button()">
+                <span>When user clicks on Buy Now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_sees_an_auto_generated_form_and_clicks_on_checkout_button()">
+                <span>Then user sees an auto generated form and clicks on Checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>Then user verifies header as "COCO STORE"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "Order Summary"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_label_as(java.lang.String)">
+                <span>And user verifies label as "amount"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_amount_value_as(java.lang.String)">
+                <span>And user verifies amount value as "20,000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "order details"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "shipping details"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_validates_the_below_table_and_its_contents()">
+                <span>Then user validates the below table and its contents</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_continue_button()">
+                <span>Then user clicks on Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_chooses_mode_of_payment_as_credit_debit_card()">
+                <span>When user chooses mode of payment as Credit/Debit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_number_as(java.lang.String)">
+                <span>Then user provides card number as "4811111111111114"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_expiry_as(java.lang.String)">
+                <span>Then user provides card expiry as "12/24"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_cvv_as(java.lang.String)">
+                <span>Then user provides card cvv as "123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_pay_now_button()">
+                <span>And user clicks on Pay Now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_bank_password_as(java.lang.String)">
+                <span>Then user provides bank password as "112233"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_ok_button()">
+                <span>Then user clicks on OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_validates_successful_transaction()">
+                <span>And user validates successful transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>Un-Successful Payment Transaction Using Faulty Credit Card</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_has_launched_browser_and_navigated_to_url()">
+                <span>Given user has launched browser and navigated to url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_buy_now_button()">
+                <span>When user clicks on Buy Now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_sees_an_auto_generated_form_and_clicks_on_checkout_button()">
+                <span>Then user sees an auto generated form and clicks on Checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>Then user verifies header as "COCO STORE"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "Order Summary"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_label_as(java.lang.String)">
+                <span>And user verifies label as "amount"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_amount_value_as(java.lang.String)">
+                <span>And user verifies amount value as "20,000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "order details"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_verifies_header_as(java.lang.String)">
+                <span>And user verifies header as "shipping details"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_validates_the_below_table_and_its_contents()">
+                <span>Then user validates the below table and its contents</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_continue_button()">
+                <span>Then user clicks on Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_chooses_mode_of_payment_as_credit_debit_card()">
+                <span>When user chooses mode of payment as Credit/Debit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_number_as(java.lang.String)">
+                <span>Then user provides card number as "4911111111111113"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_expiry_as(java.lang.String)">
+                <span>Then user provides card expiry as "12/24"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_card_cvv_as(java.lang.String)">
+                <span>Then user provides card cvv as "123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_pay_now_button()">
+                <span>And user clicks on Pay Now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_bank_password_as(java.lang.String)">
+                <span>Then user provides bank password as "112233"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"card_number"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'VBX00977', ip: '10.232.140.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\GHSOUM~1.MLI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
+Session ID: cef7f087ae2daf778d4f61656c9737ef
+*** Element info: {Using=id, value=card_number}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.qa.midtrans_pillow.pageobjects.PaymentPage.switchNextFrame(PaymentPage.java:238)
+	at com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_provides_bank_password_as(StepDef_PaymentPage.java:159)
+	at ?.user provides bank password as "112233"(file:///C:/Eclipse%20Workspace/Workspace007/Midtrans_Pillow/src/test/resources/featurefiles/CreditCardPayment.feature:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_clicks_on_ok_button()">
+                <span>Then user clicks on OK button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.midtrans_pillow.stepdefinitions.StepDef_PaymentPage.user_validates_unsuccessful_transaction()">
+                <span>And user validates unsuccessful transaction</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Negative</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Negative</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:24:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>Un-Successful Payment Transaction Using Faulty Credit Card</a>
+<div class="">
+<span class="badge badge-default">Payment Transaction using Credit Card.Un-Successful Payment Transaction Using Faulty Credit Card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:22:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful Payment Transaction Using Credit Card</a>
+<div class="">
+<span class="badge badge-default">Payment Transaction using Credit Card.Successful Payment Transaction Using Credit Card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:26:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Then user provides bank password as "112233"</a>
+<div class="">
+<span class="badge badge-default">Payment Transaction using Credit Card.Un-Successful Payment Transaction Using Faulty Credit Card.Then user provides bank password as "112233"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
