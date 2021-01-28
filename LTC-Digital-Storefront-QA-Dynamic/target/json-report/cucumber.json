@@ -1,0 +1,322 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-28T04:28:22.918Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10584000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "LTCDigitalStorefront_HomePage_Validation",
+        "description": "",
+        "id": "home-feature-of-ltc-digital-storefront;ltcdigitalstorefront-homepage-validation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2687000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 591000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on Login Page and user fills  \"R21InsuredHenry\" value in the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"R21InsuredHenry\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.user_is_on_login_page_and_user_fills_value_in_the_username_field(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 430000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user fills \"Temp@#123\" value in the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Temp@#123\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.user_fills_value_in_the_password_field(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15032000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks login button",
+            "match": {
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.user_clicks_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15398000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user lands on Home page and sees \"10000106\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10000106\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_lands_on_home_page_and_sees(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 272000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sees \"PRODUCT\" field as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PRODUCT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_sees_field_as_expected(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user sees \"POLICY_STATUS\" field as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POLICY_STATUS\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_sees_field_as_expected(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user sees \"CLIENT_NAME\" field as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CLIENT_NAME\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_sees_field_as_expected(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3334000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user sees and clicks on \"R15Insured_Henry R15Insured_Nicholls\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"R15Insured_Henry R15Insured_Nicholls\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_sees_and_clicks_on(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3295000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user sees \"Preferences\" in the dropdown and selects it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Preferences\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_sees_in_the_dropdown_and_selects_it(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3312000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks logout button on Preferences Page",
+            "match": {
+              "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_HomePage.user_clicks_logout_button_on_preferences_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.qa.ltcdigital.storefrontqadynamic.stepdefintions.StepDefinition_LoginPage.embeddScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Home"
+          }
+        ]
+      }
+    ],
+    "name": "Home feature of LTC Digital Storefront",
+    "description": "",
+    "id": "home-feature-of-ltc-digital-storefront",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/HomePage.feature",
+    "tags": []
+  }
+]

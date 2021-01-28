@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LTC-Digital-Storefront-QA-Dynamic Validation" parallel="methods" thread-count="40">
+	
+	<!-- <listeners>
+	<listener class-name="" />
+	</listeners>-->
+	<test name="Login Validation">
+		<classes>
+			<class name="com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner" />
+		</classes>
+	</test>
+</suite>

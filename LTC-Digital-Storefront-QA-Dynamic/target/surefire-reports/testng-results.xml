@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LTC-Digital-Storefront-QA-Dynamic Validation" duration-ms="61160" started-at="2021-01-28T04:28:19Z" finished-at="2021-01-28T04:29:20Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner@402a079c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Login Validation" duration-ms="61160" started-at="2021-01-28T04:28:19Z" finished-at="2021-01-28T04:29:20Z">
+      <class name="com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="3077" started-at="2021-01-27T23:28:19Z" finished-at="2021-01-27T23:28:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner@402a079c]" name="runScenario" duration-ms="56692" started-at="2021-01-27T23:28:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-27T23:29:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LTCDigitalStorefront_HomePage_Validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Home feature of LTC Digital Storefront]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="1313" started-at="2021-01-27T23:29:18Z" finished-at="2021-01-27T23:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner -->
+    </test> <!-- Login Validation -->
+  </suite> <!-- LTC-Digital-Storefront-QA-Dynamic Validation -->
+</testng-results>

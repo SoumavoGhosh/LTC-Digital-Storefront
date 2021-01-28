@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="40" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [LTC-Digital-Storefront-QA-Dynamic Validation]" parallel="methods">
+  <test name="Login Validation">
+    <classes>
+      <class name="com.qa.ltcdigital.storefrontqadynamic.testrunner.TestRunner"/>
+    </classes>
+  </test> <!-- Login Validation -->
+</suite> <!-- Failed suite [LTC-Digital-Storefront-QA-Dynamic Validation] -->
